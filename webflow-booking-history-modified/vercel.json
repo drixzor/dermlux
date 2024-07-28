@@ -2,19 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/fetchBookings.js",
-      "use": "@vercel/node"
-    },
-    {
       "src": "api/hello.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/api/fetchBookings",
-      "dest": "api/fetchBookings.js"
-    },
     {
       "src": "/api/hello",
       "dest": "api/hello.js"
